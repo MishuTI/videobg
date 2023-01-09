@@ -1,0 +1,232 @@
+/* All common css start  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+/* All common css end  */
+
+/* header part start  */
+#header_part{
+    /* background: #ec3c61; */
+    padding:20px 0;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+}
+
+.nav-link {
+    font-family: 'Raleway', sans-serif;
+	color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    transition: 0.8s;
+}
+.nav-link:hover {
+    color:#fff;
+}
+.nav-link::after{
+    position:absolute;
+    content: "";
+    width:0%;
+    height: 1px;
+    background: #fff;
+    bottom:0;
+    left:0;
+    transition: 0.8s;
+}
+.nav-link:hover::after{
+    position:absolute;
+    content: "";
+    width:100%;
+    height: 1px;
+    background: #fff;
+    bottom:0;
+    left:0;
+}
+
+/* header part end  */
+
+/* banner part start  */
+#banner_part{
+    background: linear-gradient(70deg ,hsla(347, 80%, 50%, 0.90),hsla(347, 82%, 58%, 0.75),rgba(236, 60, 98, 0.9));
+    position:relative;
+    overflow:hidden;
+    min-height: 100vh;
+}
+
+.banner_text{
+    text-align: center;
+    color:#fff;
+    padding-top: 180px;
+}
+.video-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-2;
+    min-width:100%;
+    min-height:100%;
+}
+.banner_text h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+    transition: 0.5s;
+}
+.banner_text h1:hover{
+    -webkit-text-stroke: 1px #fff;
+    color:transparent;
+}
+.banner_text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding-top: 25px;
+    line-height: 24px;
+    padding-bottom: 40px;
+}
+
+.banner_btn{
+    text-align: center;
+}
+.banner_btn a{
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border:1px solid #fff;
+    padding: 15px 20px;
+    margin-top: 10px;
+    transition: 0.8s;
+}
+.banner_btn a:hover{
+    background: #fff;
+    color: #ec3c61;
+}
+.banner_img{
+    position:absolute;
+    bottom:-560px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.banner_bottom{
+    position:absolute;
+    width:100%;
+    height:60px;
+    bottom:0px;
+    left:0;
+    background: #fff;
+    clip-path: polygon(52% 94%, 78% 57%, 100% 0, 100% 100%, 81% 100%, 52% 100%, 20% 100%, 0 100%, 0 0, 22% 54%);
+}
+
+
+
+
+/* banner part end  */
+
+/* feature part start  */
+#feature_part{
+    padding: 60px 0;
+
+}
+.feature_head{
+    text-align: center;
+}
+.feature_head h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color:#111;
+    padding-top: 60px;
+}
+.feature_head p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color:#555;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.feature_item_part{
+    padding-top: 60px;
+}
+
+.feature_txt1{
+    text-align: right;
+}
+.feature_txt1 h3{
+    font-family: 'Roboto', sans-serif;
+    font-size:28px;
+    font-weight: 600;
+    color:#111;
+    transition: 0.6s;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.feature_txt1 h3:hover{
+    color:#ec3c61;
+}
+.feature_txt1 p{
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    font-weight: 400;
+    color:#555;
+    line-height: 24px;
+    padding-bottom: 35px;
+}
+.feature_icon{
+    font-size:52px;
+    vertical-align: top;
+    text-align: center;
+    color:#ec3c61;
+}
+.feature_txt2{
+    text-align: left;
+}
+
+.feature_txt2 h3{
+    font-family: 'Roboto', sans-serif;
+    font-size:28px;
+    font-weight: 600;
+    color:#111;
+    transition: 0.6s;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.feature_txt2 h3:hover{
+    color:#ec3c61;
+}
+.feature_txt2 p{
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    font-weight: 400;
+    color:#555;
+    line-height: 24px;
+    padding-bottom: 35px;
+}
+/* feature part end  */
+
+/* header part start  */
+
+/* header part end  */
